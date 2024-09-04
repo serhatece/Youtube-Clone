@@ -1,8 +1,15 @@
 import React from "react";
 import "./Video.css";
+import PlayVideo from "../../Components/PlayVideo/PlayVideo";
+import Recomended from "../../Components/Recomended/Recomended";
 
 const Video = () => {
-  return <div></div>;
+  return (
+    <div className="play-container">
+      <PlayVideo />
+      <Recomended />
+    </div>
+  );
 };
 
 export default Video;
