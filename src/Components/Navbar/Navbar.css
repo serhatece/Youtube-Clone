@@ -35,9 +35,10 @@ nav{
     width: 15px;
 }
 
-.nav-right img{
-    width: 25px;
-    margin-right: 25px;
+.nav-right .icon{
+    width: 45px;
+    height: 30px;
+    margin-right: 5px;
 }
 
 .nav-right .user-icon{

@@ -1,14 +1,14 @@
 import React from "react";
 import "./SideBar.css";
-import home from "../../../assets/home.png";
-import game_icon from "../../../assets/game_icon.png";
-import automobiles from "../../../assets/automobiles.png";
-import sports from "../../../assets/sports.png";
-import entertainment from "../../../assets/entertainment.png";
-import tech from "../../../assets/tech.png";
-import music from "../../../assets/music.png";
-import blogs from "../../../assets/blogs.png";
-import news from "../../../assets/news.png";
+import HomeIcon from "@mui/icons-material/Home";
+import SportsEsportsIcon from "@mui/icons-material/SportsEsports";
+import TimeToLeaveIcon from "@mui/icons-material/TimeToLeave";
+import SportsSoccerIcon from "@mui/icons-material/SportsSoccer";
+import OndemandVideoIcon from "@mui/icons-material/OndemandVideo";
+import ElectricBoltIcon from "@mui/icons-material/ElectricBolt";
+import LibraryMusicIcon from "@mui/icons-material/LibraryMusic";
+import BookIcon from "@mui/icons-material/Book";
+import NewspaperIcon from "@mui/icons-material/Newspaper";
 import jack from "../../../assets/jack.png";
 import simon from "../../../assets/simon.png";
 import tom from "../../../assets/tom.png";
@@ -23,63 +23,63 @@ const SideBar = ({ sidebar, category, setCategory }) => {
           className={`side-link ${category === 0 ? "active" : ""}`}
           onClick={() => setCategory(0)}
         >
-          <img src={home} alt="" />
+          <HomeIcon className="side-icons" />
           <p>Home</p>
         </div>
         <div
           className={`side-link ${category === 20 ? "active" : ""}`}
           onClick={() => setCategory(20)}
         >
-          <img src={game_icon} alt="" />
+          <SportsEsportsIcon className="side-icons" />
           <p>Gaming</p>
         </div>
         <div
           className={`side-link ${category === 2 ? "active" : ""}`}
           onClick={() => setCategory(2)}
         >
-          <img src={automobiles} alt="" />
+          <TimeToLeaveIcon className="side-icons" />
           <p>Automobiles</p>
         </div>
         <div
           className={`side-link ${category === 17 ? "active" : ""}`}
           onClick={() => setCategory(17)}
         >
-          <img src={sports} alt="" />
+          <SportsSoccerIcon className="side-icons" />
           <p>Sports</p>
         </div>
         <div
           className={`side-link ${category === 24 ? "active" : ""}`}
           onClick={() => setCategory(24)}
         >
-          <img src={entertainment} alt="" />
+          <OndemandVideoIcon className="side-icons" />
           <p>Entertainment</p>
         </div>
         <div
           className={`side-link ${category === 28 ? "active" : ""}`}
           onClick={() => setCategory(28)}
         >
-          <img src={tech} alt="" />
+          <ElectricBoltIcon className="side-icons" />
           <p>Tecnology</p>
         </div>
         <div
           className={`side-link ${category === 10 ? "active" : ""}`}
           onClick={() => setCategory(10)}
         >
-          <img src={music} alt="" />
+          <LibraryMusicIcon className="side-icons" />
           <p>Music</p>
         </div>
         <div
           className={`side-link ${category === 22 ? "active" : ""}`}
           onClick={() => setCategory(22)}
         >
-          <img src={blogs} alt="" />
+          <BookIcon className="side-icons" />
           <p>Blogs</p>
         </div>
         <div
           className={`side-link ${category === 25 ? "active" : ""}`}
           onClick={() => setCategory(25)}
         >
-          <img src={news} alt="" />
+          <NewspaperIcon className="side-icons" />
           <p>News</p>
         </div>
         <hr />
@@ -88,23 +88,23 @@ const SideBar = ({ sidebar, category, setCategory }) => {
         <h3>Subscribed</h3>
         <div className="side-link">
           <img src={jack} alt="" />
-          <p>PewDiePie</p>
+          <p>Channel 1</p>
         </div>
         <div className="side-link">
           <img src={simon} alt="" />
-          <p>MrBeast</p>
+          <p>Channel 2</p>
         </div>
         <div className="side-link">
           <img src={tom} alt="" />
-          <p>Justin Bieber</p>
+          <p>Channel 3</p>
         </div>
         <div className="side-link">
           <img src={megan} alt="" />
-          <p>5-Minute Crafts</p>
+          <p>Channel 4</p>
         </div>
         <div className="side-link">
           <img src={cameron} alt="" />
-          <p>Nas Dail</p>
+          <p>Channel 1</p>
         </div>
       </div>
     </div>
