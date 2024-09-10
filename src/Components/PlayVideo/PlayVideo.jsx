@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from "react";
 import "./PlayVideo.css";
-import like from "../../assets/like.png";
-import dislike from "../../assets/dislike.png";
-import share from "../../assets/share.png";
-import save from "../../assets/save.png";
+import ThumbUpIcon from "@mui/icons-material/ThumbUp";
+import ThumbDownIcon from "@mui/icons-material/ThumbDown";
+import ShareIcon from "@mui/icons-material/Share";
+import SaveAltIcon from "@mui/icons-material/SaveAlt";
 import { API_KEY, value_convert } from "../../data";
 import moment from "moment";
 import { useParams } from "react-router-dom";
@@ -85,19 +85,19 @@ const PlayVideo = () => {
         </p>
         <div>
           <span>
-            <img src={like} alt="Like" />
+            <ThumbUpIcon className="icon" />
             {apiData ? value_convert(apiData.statistics.likeCount) : 155}
           </span>
           <span>
-            <img src={dislike} alt="Dislike" />
+            <ThumbDownIcon className="icon" />
             {apiData ? value_convert(apiData.statistics.dislikeCount) : 155}
           </span>
           <span>
-            <img src={share} alt="Share" />
+            <ShareIcon className="icon" />
             Share
           </span>
           <span>
-            <img src={save} alt="Save" />
+            <SaveAltIcon className="icon" />
             Save
           </span>
         </div>
@@ -145,13 +145,13 @@ const PlayVideo = () => {
               </h3>
               <p>{item.snippet.topLevelComment.snippet.textDisplay}</p>
               <div className="comment-action">
-                <img src={like} alt="Like" />
+                <ThumbUpIcon className="comment-icon" />
                 <span>
                   {value_convert(
                     item.snippet.topLevelComment.snippet.likeCount
                   )}
                 </span>
-                <img src={dislike} alt="Dislike" />
+                <ThumbDownIcon className="comment-icon" />
               </div>
             </div>
           </div>
